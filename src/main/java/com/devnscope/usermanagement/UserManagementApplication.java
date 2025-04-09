@@ -2,13 +2,12 @@ package com.devnscope.usermanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication
-public class UsermanagementApplication {
+public class UserManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UsermanagementApplication.class, args);
+		SpringApplication.run(UserManagementApplication.class, args);
 	}
 
 }

@@ -1,26 +1,19 @@
 package com.devnscope.usermanagement.entity;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-import java.time.LocalDate;
-
-
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Data
 @Document(collection = "users")
 public class User {
 
     @Id
-    private Long userId;
+    private String userId;
 
     private String username;
 
@@ -32,6 +25,6 @@ public class User {
 
     private String role;
 
-    private LocalDate dob;
+    private String dob;
 
 }
